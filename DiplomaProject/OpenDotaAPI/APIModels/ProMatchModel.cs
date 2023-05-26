@@ -2,10 +2,10 @@
 {
     public class ProInfoModel:IAPIModel
     {
-        public string? id;
-        public string? name;
-        public string? tag;
-        public string? logoUrl;
+        public string? id { get; set; }
+        public string? name { get; set; }
+        public string? tag { get; set; }
+        public string? logoUrl { get; set; }
 
         public override bool Equals(object? obj)
         {

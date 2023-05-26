@@ -6,13 +6,13 @@ namespace DiplomaProject.OpenDotaAPI.APIComposite
 {
     public abstract class Component
     {
-        protected FieldInfo _field;
+        protected PropertyInfo _field;
         protected IAPIModel _model;
         protected IAPIModel[] _models;
         protected Component _parent;
         protected APIParser _parser;
         public virtual IAPIModel APIModel { get { return _model; } }
-        public Component(FieldInfo field,IAPIModel model, APIParser parser) {
+        public Component(PropertyInfo field,IAPIModel model, APIParser parser) {
             _field = field;
             _model = model;
             _parser = parser;
@@ -21,7 +21,7 @@ namespace DiplomaProject.OpenDotaAPI.APIComposite
             _model = model;
             _parser = parser;
         }
-        protected Component(FieldInfo field, IAPIModel[] model, APIParser parser) {
+        protected Component(PropertyInfo field, IAPIModel[] model, APIParser parser) {
             _field = field;
             _models = model;
             _parser = parser;

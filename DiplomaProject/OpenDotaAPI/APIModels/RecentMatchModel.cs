@@ -2,12 +2,12 @@
 {
     public class RecentMatchModel : IAPIModel
     {
-        public string matchId;
-        public string playerSlot;
-        public string radiantWin;
-        public string heroId;
-        public string kills;
-        public string deaths;
-        public string assists;
+        public string matchId { get; set; }
+        public string playerSlot { get; set; }
+        public string radiantWin { get; set; }
+        public string heroId { get; set; }
+        public string kills { get; set; }
+        public string deaths { get; set; }
+        public string assists { get; set; }
     }
 }

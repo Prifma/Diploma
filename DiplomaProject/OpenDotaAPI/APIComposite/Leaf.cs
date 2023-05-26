@@ -6,7 +6,7 @@ namespace DiplomaProject.OpenDotaAPI.APIComposite
 {
     class Leaf : Component
     {
-        public Leaf(FieldInfo field, IAPIModel model, APIParser parser) : base(field, model, parser)
+        public Leaf(PropertyInfo field, IAPIModel model, APIParser parser) : base(field, model, parser)
         {
         }
         public Leaf (IAPIModel model, APIParser parser) : base( model, parser)

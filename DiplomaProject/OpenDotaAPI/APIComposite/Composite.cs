@@ -9,7 +9,7 @@ namespace DiplomaProject.OpenDotaAPI.APIComposite
         protected List<Component> _children = new List<Component>();
        
 
-        public Composite(FieldInfo field, IAPIModel model, APIParser parser) : base(field, model, parser)
+        public Composite(PropertyInfo field, IAPIModel model, APIParser parser) : base(field, model, parser)
         {
         }
         public Composite(IAPIModel model, APIParser parser) : base(model, parser)

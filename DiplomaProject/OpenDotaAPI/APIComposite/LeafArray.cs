@@ -8,7 +8,7 @@ namespace DiplomaProject.OpenDotaAPI.APIComposite
     {
        
 
-        public LeafArray(FieldInfo field, IAPIModel[] model, APIParser parser) : base(field, model, parser)
+        public LeafArray(PropertyInfo field, IAPIModel[] model, APIParser parser) : base(field, model, parser)
         {
         }
 

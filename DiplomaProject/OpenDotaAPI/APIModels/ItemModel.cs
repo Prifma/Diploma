@@ -2,9 +2,9 @@
 {
     public class ItemModel : IAPIModel
     {
-        public string? id;
-        public string? name;
-        public string? path;
+        public string? id { get; set; }
+        public string? name { get; set; }
+        public string? path { get; set; }
         public override bool Equals(object? obj1)
         {
             if (obj1 == null)

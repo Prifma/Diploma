@@ -18,7 +18,7 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers
             {
                 try
                 {
-                    var field = classType.GetField(item.Key);
+                    var field = classType.GetProperty(item.Key);
                     if (field != null)
                     {
                         field.SetValue(model, GetPropertyFromJson(item.Value));
@@ -57,7 +57,9 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 return GetPropertyFromArrayJson(path);
+
             }
         }
         private string? GetPropertyFromArrayJson(string path)

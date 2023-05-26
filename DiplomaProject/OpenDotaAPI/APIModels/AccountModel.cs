@@ -4,8 +4,8 @@ namespace DiplomaProject.OpenDotaAPI.APIModels
 {
     public class AccountModel : IAPIModel
     {
-        public ProfileModel profile;
-        public RecentMatchModel[] matches;
-        public TotalsModel[] totals;
+        public ProfileModel profile { get; set; }
+        public RecentMatchModel[] matches { get; set; }
+        public TotalsModel[] totals { get; set; }
     }
 }

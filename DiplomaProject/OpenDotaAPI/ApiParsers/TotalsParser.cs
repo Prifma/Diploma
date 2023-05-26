@@ -20,7 +20,7 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers
             {
                 try
                 {
-                    var field = classType.GetField(item.Key);
+                    var field = classType.GetProperty(item.Key);
                     if (field != null)
                     {
                         field.SetValue(model, GetPropertyFromJson("[" + _index.ToString() + "]." + item.Value));

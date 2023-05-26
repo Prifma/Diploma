@@ -2,13 +2,13 @@
 {
     public class ProfileModel : IAPIModel
     {
-        public string rankTier;
-        public string accountId;
-        public string personaName;
-        public string name;
-        public string avatar;
-        public string profileUrl;
-        public string isSubscriber;
-        public string leaderBordRank;
+        public string rankTier { get; set; }
+        public string accountId { get; set; }
+        public string personaName { get; set; }
+        public string name { get; set; }
+        public string avatar { get; set; }
+        public string profileUrl { get; set; }
+        public string isSubscriber { get; set; }
+        public string leaderBordRank { get; set; }
     }
 }

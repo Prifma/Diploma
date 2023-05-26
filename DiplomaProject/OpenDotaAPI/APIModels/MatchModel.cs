@@ -2,14 +2,14 @@
 {
     public class MatchModel : IAPIModel
     {
-        public string? matchId;
-        public HeroModel[] heroes = new HeroModel[10];
-        public string? radiantWin;
-        public TeamModel dire;
-        public TeamModel radiant;
-        public string? duration;
+        public string? matchId { get; set; }
+        public HeroModel[] heroes { get; set; }
+        public string? radiantWin { get; set; }
+        public TeamModel dire { get; set; }
+        public TeamModel radiant { get; set; }
+        public string? duration { get; set; }
         //nullable
-        public string? leagueId;
+        public string? leagueId { get; set; }
         public override bool Equals(object? obj)
         {
             if (obj == null)

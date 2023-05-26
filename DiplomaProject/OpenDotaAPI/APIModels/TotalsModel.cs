@@ -2,7 +2,7 @@
 {
     public class TotalsModel : IAPIModel
     {
-        public string field;
-        public string count;
+        public string field { get; set; }
+        public string count { get; set; }
     }
 }

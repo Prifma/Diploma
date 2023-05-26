@@ -2,8 +2,8 @@
 {
     public class TeamModel : IAPIModel
     {
-        public string? score;
-        public ProInfoModel? proModel;
+        public string? score { get; set; }
+        public ProInfoModel? proModel { get; set; }
         public override bool Equals(object? obj)
         {
             if (obj == null)
