@@ -1,0 +1,73 @@
+﻿{
+  "match": {
+    "matchId": "match_id",
+    "radiantWin": "radiant_win",
+    "duration": "duration"
+  },
+  "heroes": {
+    "heroId": "hero_id",
+    "netWorth": "net_worth",
+    "playerSlot": "player_slot",
+    "accountId": "account_id",
+    "kills": "kills",
+    "deaths": "deaths",
+    "assists": "assists",
+    "goldPerMin": "gold_per_min",
+    "epxPerMin": "xp_per_min",
+    "heroDamage": "hero_damage",
+    "lastHits": "last_hits",
+    "denies": "denies",
+    "level": "level",
+    "towerDamage": "tower_damage"
+  },
+  "items": {
+    "main_items": [
+      "item_0",
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5"
+    ],
+    "back_pack_items": [
+      "backpack_0",
+      "backpack_1",
+      "backpack_2"
+    ],
+    "neutral_item": "item_neutral"
+  },
+  "team": {
+    "score": "_score"
+  },
+  "pro": {
+    "id": "team_id",
+    "name": "name",
+    "tag": "tag",
+    "logoUrl": "logo_url"
+  },
+  "account": {
+    "": {
+      "rankTier": "rank_tier",
+      "accountId": "profile.account_id",
+      "personaName": "profile.personaname",
+      "name": "profile.name",
+      "avatar": "profile.avatarfull",
+      "profileUrl": "profile.profileurl",
+      "isSubscriber": "profile.is_subscriber",
+      "leaderBordRank": "leaderboard_rank"
+    },
+    "recentMatches": {
+      "matchId": "match_id",
+      "playerSlot": "player_slot",
+      "radiantWin": "radiant_win",
+      "heroId": "hero_id",
+      "kills": "kills",
+      "deaths": "deaths",
+      "assists": "assists"
+    },
+    "totals": {
+      "field": "field",
+      "count": "sum"
+    } 
+  }
+}
