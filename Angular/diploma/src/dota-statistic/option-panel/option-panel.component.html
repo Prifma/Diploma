@@ -1,0 +1,18 @@
+<div class="option--item--name">
+    <label>Знайти Матч</label>   
+</div>
+<div class="option--item--field">
+    <form #matchForm="ngForm" novalidate>
+        <input name="match" ngModel required pattern="[0-9]{10}">
+        <button [disabled]="matchForm.invalid" (click)="getMatch(matchForm)">Пошук</button>
+    </form>
+</div>
+<div class="option--item--name">
+    <label>Знайти Гравця</label>   
+</div>
+<div class="option--item--field">
+    <form #playerForm="ngForm" novalidate>
+        <input name="player" ngModel required pattern="[0-9]{9,10}">
+        <button [disabled]="playerForm.invalid" (click)="getPlayer(playerForm)">Пошук</button>
+    </form>
+</div>

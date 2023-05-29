@@ -1,0 +1,8 @@
+<div class="steam-login" *ngIf="!acc.isAuth">
+    <form action="/signin" method="post">
+        <button class="" type="submit"><img src="https://community.akamai.steamstatic.com/public/images/signinthroughsteam/sits_02.png" alt="Steam Auth"></button>
+    </form>
+</div>
+<div class="steam-logout" *ngIf="acc.isAuth">
+    <a class="steam-logout--button" href="/signout?returnUrl=%2F">Sing out</a>
+</div>
