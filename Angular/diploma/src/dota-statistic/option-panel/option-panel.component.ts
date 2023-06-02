@@ -11,12 +11,9 @@ export class OptionPanelComponent {
   constructor(private server:ServerService){}
   matchId:number=0;
   getMatch(form: NgForm){
-    this.server.getMatch(form.value.match).subscribe({next:(data:any) => {
-      let match:MatchModel = data;  
-      console.log(match);
-      this.change(1,match);
-    }})
-  }
+      this.change(1,form.value.match);
+    }
+  
 
   getPlayer(form: NgForm){
     this.change(2,form.value.player)

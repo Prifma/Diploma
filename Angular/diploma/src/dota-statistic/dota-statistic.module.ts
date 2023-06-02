@@ -11,6 +11,8 @@ import { ProfileRecentComponent } from './profile-recent/profile-recent.componen
 import { ProfileTotalsComponent } from './profile-totals/profile-totals.component';
 import { ResultComponent } from './result/result.component';
 import { DotaMatchComponent } from './dota-match/dota-match.component';
+import { TableBuilderService } from 'src/servisec/tables';
+import { LoadComponent } from 'src/app/compontnts/load/load.component';
 
 
 
@@ -23,11 +25,12 @@ import { DotaMatchComponent } from './dota-match/dota-match.component';
                 ProfileInfoComponent,
                 ProfileRecentComponent,
                 ProfileTotalsComponent,
-                ResultComponent ],
+                ResultComponent,
+                LoadComponent],
   imports: [
     CommonModule, FormsModule
   ],
   exports:[StatisticRootComponent ],
-  providers:[ServerService]
+  providers:[ServerService,TableBuilderService]
 })
 export class DotaStatisticModule { }

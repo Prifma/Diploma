@@ -5,11 +5,11 @@ export class HeroModel{
     accountId?:string;
     netWorth?:string;
     playerSlot?:string;
-    mainItems?:ItemModel[];
-    backPackItems?:ItemModel[];
-    neutralItme?:ItemModel;
+    mainItems:ItemModel[]=[];
+    backPackItems:ItemModel[]=[];
+    neutralItem:ItemModel = {};
     kills?:string;
-    death?:string;
+    deaths?:string;
     assists?:string;
     goldPerMin?:string;
     expPerMin?:string;

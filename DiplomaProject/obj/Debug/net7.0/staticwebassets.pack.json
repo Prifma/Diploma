@@ -1,0 +1,233 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\00.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\00.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\11.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\11.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\12.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\12.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\13.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\13.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\14.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\14.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\15.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\15.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\21.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\21.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\22.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\22.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\23.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\23.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\24.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\24.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\25.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\25.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\31.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\31.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\32.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\32.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\33.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\33.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\34.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\34.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\35.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\35.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\41.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\41.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\42.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\42.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\43.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\43.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\44.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\44.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\45.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\45.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\51.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\51.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\52.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\52.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\53.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\53.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\54.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\54.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\55.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\55.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\61.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\61.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\62.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\62.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\63.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\63.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\64.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\64.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\65.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\65.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\71.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\71.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\72.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\72.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\73.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\73.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\74.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\74.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\75.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\75.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\80.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\80.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\81.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\81.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\82.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\82.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\83.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\83.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\84.webp",
+      "PackagePath": "staticwebassets\\src\\assets\\84.webp"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\pngwing.com (1).png",
+      "PackagePath": "staticwebassets\\src\\assets\\pngwing.com (1).png"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\index.html",
+      "PackagePath": "staticwebassets\\src\\index.html"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\main.js",
+      "PackagePath": "staticwebassets\\src\\main.js"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\main.js.map",
+      "PackagePath": "staticwebassets\\src\\main.js.map"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\polyfills.js",
+      "PackagePath": "staticwebassets\\src\\polyfills.js"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\polyfills.js.map",
+      "PackagePath": "staticwebassets\\src\\polyfills.js.map"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\runtime.js",
+      "PackagePath": "staticwebassets\\src\\runtime.js"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\runtime.js.map",
+      "PackagePath": "staticwebassets\\src\\runtime.js.map"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\styles.css",
+      "PackagePath": "staticwebassets\\src\\styles.css"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\styles.css.map",
+      "PackagePath": "staticwebassets\\src\\styles.css.map"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\vendor.js",
+      "PackagePath": "staticwebassets\\src\\vendor.js"
+    },
+    {
+      "Id": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\vendor.js.map",
+      "PackagePath": "staticwebassets\\src\\vendor.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.DiplomaProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.DiplomaProject.props",
+      "PackagePath": "build\\DiplomaProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.DiplomaProject.props",
+      "PackagePath": "buildMultiTargeting\\DiplomaProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.DiplomaProject.props",
+      "PackagePath": "buildTransitive\\DiplomaProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

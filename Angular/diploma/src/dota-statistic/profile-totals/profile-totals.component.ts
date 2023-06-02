@@ -1,11 +1,17 @@
 
 import { Component,Input } from '@angular/core';
-import { MatchModel } from 'src/models/MatchModel';
+import { TotalsModel } from 'src/models/TotalsModel';
+import { TableBuilderService } from 'src/servisec/tables';
 
 @Component({
   selector: 'app-profile-totals',
   templateUrl: './profile-totals.component.html',
 })
 export class ProfileTotalsComponent {
-    
+    @Input() set totals(value:TotalsModel[]){
+      this._totals = value;
+    }
+    _totals:TotalsModel[] = [];
+    @Input()
+    recive:boolean = false;
 }

@@ -9,12 +9,13 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers.APIParserConfigurations
         public TeamConfiguration(IConfiguration configuration, bool isRediant) : base(configuration)
         {
             _isRediant = isRediant;
-        }
-
-        protected override void AddDefault() {
             Dictionary<string, string>? values = _configuration.GetSection("team").GetChildren().ToDictionary(x => x.Key, x => Side + x.Value);
             AddValue(values);
             AddPro();
+        }
+
+        protected override void AddDefault() {
+            
         }
         public void AddPro() {
             AddValue("pro", "true");

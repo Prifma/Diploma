@@ -4,6 +4,6 @@ export class RecentMatchModel{
     radiantWin?:string;
     heroId?:string;
     kills?:string;
-    death?:string;
+    deaths?:string;
     assists?:string;
 }

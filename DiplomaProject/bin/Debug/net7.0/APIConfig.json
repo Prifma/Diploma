@@ -13,7 +13,7 @@
     "deaths": "deaths",
     "assists": "assists",
     "goldPerMin": "gold_per_min",
-    "epxPerMin": "xp_per_min",
+    "expPerMin": "xp_per_min",
     "heroDamage": "hero_damage",
     "lastHits": "last_hits",
     "denies": "denies",
@@ -68,6 +68,11 @@
     "totals": {
       "field": "field",
       "count": "sum"
-    } 
+    }
+  },
+  "steam": {
+    "id": "response.players[0].steamid",
+    "name": "response.players[0].personaname",
+    "imgUrl": "response.players[0].avatarfull"
   }
 }

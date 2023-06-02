@@ -52,12 +52,12 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers
                     return null;
                 }
                 JToken? token = data.SelectToken(path);
-                var result = token.Value<string>() ?? "";
+                var result = token.Value<string>() ?? null;
                 return result;
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+               // Console.WriteLine(ex.Message);
                 return GetPropertyFromArrayJson(path);
 
             }
@@ -73,13 +73,13 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers
                     return null;
                 }
                 JToken? token = data.SelectToken(path);
-                var result = token.Value<string>() ?? "";
+                var result = token.Value<string>() ?? null;
                 return result;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                return "";
+                return null;
             }
         }
 

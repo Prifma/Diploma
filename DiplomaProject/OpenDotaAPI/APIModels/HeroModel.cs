@@ -15,7 +15,7 @@ namespace DiplomaProject.OpenDotaAPI.APIModels
         public string? deaths { get; set; }
         public string? assists { get; set; }
         public string? goldPerMin { get; set; }
-        public string? epxPerMin { get; set; }
+        public string? expPerMin { get; set; }
         public string? heroDamage { get; set; }
         public string? lastHits { get; set; }
         public string? denies { get; set; }
@@ -32,7 +32,7 @@ namespace DiplomaProject.OpenDotaAPI.APIModels
                 && this.netWorth == model.netWorth && this.playerSlot == model.playerSlot
                 && this.kills == model.kills && this.deaths == model.deaths
                 && this.assists == model.assists && this.goldPerMin == model.goldPerMin
-                && this.epxPerMin == model.epxPerMin && this.heroDamage == model.heroDamage
+                && this.expPerMin == model.expPerMin && this.heroDamage == model.heroDamage
                 && this.lastHits == model.lastHits && this.denies == model.denies
                 && this.level == model.level && this.towerDamage == model.towerDamage
                 && CompareItems(this.mainItems,model.mainItems) && CompareItems(this.backPackItems, model.backPackItems)

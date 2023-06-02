@@ -4,6 +4,7 @@ using DiplomaProject.OpenDotaAPI.ApiParsers.APIParserConfigurations;
 using DiplomaProject.OpenDotaAPI.Fabrics;
 using DiplomaProject.OpenDotaAPI.Getters;
 using DiplomaProject.OpenDotaAPI.APIComposite;
+using DiplomaProject.OpenDotaAPI.PostProcces;
 
 namespace DiplomaProject.Services
 {
@@ -23,7 +24,10 @@ namespace DiplomaProject.Services
             string json = apiGetter.Result;
             AccountPartConfiguration conf = new AccountPartConfiguration(_configuration, "");
             APIParser parser = new APIParser(json, conf);
-            return parser.Parse();
+            ProfileModel profile = (ProfileModel)parser.Parse();
+            string rank = $"ranks:{profile.rankTier}";
+            profile.rankTier = $"src/assets/{profile.rankTier}.webp";
+            return profile;
         }
 
         public IAPIModel GetMacth(long id)
@@ -35,6 +39,8 @@ namespace DiplomaProject.Services
             APIParserFactory factory = new APIParserFactory(_configuration);
             Component f = factory.GetMatch(json);
             f.Operation();
+            MatchPost post = new MatchPost();
+            post.SetNormalDuration((MatchModel)f.APIModel);
             return f.APIModel;
         }
 
@@ -49,6 +55,18 @@ namespace DiplomaProject.Services
             return parser.ParseToArray();
         }
 
+        public SteamAccModel GetSteamAcc(long id)
+        {
+            string url = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=94C8CF8E8735EE208B3E8FB0567B422F&steamids=" + id.ToString();
+            OnceApiGetter onceApiGetter = new OnceApiGetter(url);
+            onceApiGetter.Invoke();
+            var result = onceApiGetter.Result;
+            SteamConfiguratoin conf = new SteamConfiguratoin(_configuration);
+            APIParser parser = new APIParser(result, conf);
+            var item = (SteamAccModel)parser.Parse();
+            return item;
+        }
+
         public IAPIModel[] GetTotals(long id)
         {
             string apiUrl = _openDotaURL + "/players/" + id.ToString() + "/totals";
@@ -57,7 +75,10 @@ namespace DiplomaProject.Services
             string json = apiGetter.Result;
             var conf = new AccountPartConfiguration(_configuration, "totals");
             var parser = new TotalsParser(json, conf, -1);
-            return parser.ParseToArray();
+            TotalsModel[] totals = (TotalsModel[])parser.ParseToArray();
+            TotalsPost post = new TotalsPost();
+            totals = post.ChangeToNormal(totals);
+            return totals;
         }
     }
 }

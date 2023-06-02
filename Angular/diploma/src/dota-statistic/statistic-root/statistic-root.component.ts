@@ -8,9 +8,9 @@ import { MatchModel } from 'src/models/MatchModel';
 })
 export class StatisticRootComponent {
   action?:number;
-  model?:any;
+  id?:any;
   onChanged(e:any){
     this.action = e.a;
-    this.model = e.m;
+    this.id = e.m;
   }
 }

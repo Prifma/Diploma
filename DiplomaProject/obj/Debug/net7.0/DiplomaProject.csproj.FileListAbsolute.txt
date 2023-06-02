@@ -112,3 +112,12 @@ C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\De
 C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\AngleSharp.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\AspNet.Security.OpenId.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\AspNet.Security.OpenId.Steam.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\obj\Debug\net7.0\DiplomaProject.RazorAssemblyInfo.cache
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\obj\Debug\net7.0\DiplomaProject.RazorAssemblyInfo.cs
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\DiplomaProject.staticwebassets.runtime.json

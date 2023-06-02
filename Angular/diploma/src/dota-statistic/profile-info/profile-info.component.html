@@ -1,0 +1,10 @@
+
+<span>Аватар: <img src="{{_profile.avatar}}" alt="Аватар" class="medium"></span>
+<span>Нікнейм: {{_profile.personaName}}</span>
+<span>Посилання на профіль: <a href="{{_profile.profileUrl}}" target="_blank">Профіль</a></span>
+<span>Медаль: <img src="{{_profile.rankTier}}" alt="Медаль" class="medium"></span>
+<span>Підписка на дота плюс:
+<span *ngIf="_profile.isSubscriber == 'true'">Є підписником</span>
+<span *ngIf="_profile.isSubscriber != 'true'">Не є підписником</span></span>
+<span *ngIf="_profile.leaderBordRank">Позиція в таблиці лідерів: {{_profile.leaderBordRank}}</span>
+

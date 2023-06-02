@@ -3,10 +3,10 @@ import { TeamModel } from "./TeamModel";
 
 export class MatchModel{
     matchId?:string;
-    heroes?:HeroModel[];
+    heroes:HeroModel[] = [];
     radiantWin?:string;
-    dire?:TeamModel;
-    radiant?:TeamModel;
+    dire:TeamModel  = {score:""};;
+    radiant:TeamModel = {score:""};
     duration?:string;
     leagueId?:string;
 }

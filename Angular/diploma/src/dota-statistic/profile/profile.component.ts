@@ -1,6 +1,9 @@
 
 import { Component,Input } from '@angular/core';
 import { MatchModel } from 'src/models/MatchModel';
+import { ProfileModel } from 'src/models/ProfileModel';
+import { RecentMatchModel } from 'src/models/RecentMatchModel';
+import { TotalsModel } from 'src/models/TotalsModel';
 import { ServerService } from 'src/servisec/server';
 
 @Component({
@@ -8,21 +11,68 @@ import { ServerService } from 'src/servisec/server';
   templateUrl: './profile.component.html',
 })
 export class ProfileComponent {
-  @Input()
-  model:number = 0;
-  json:any
+  @Input() set playerId(value:number){
+    this._id = value
+    this.isCalledP = false;
+    this.isCalledR = false;
+    this.isCalledT = false;
+    this.profileInfo = {};
+    this.recentMatches = []
+    this.totals=[]
+    this.profileExistInDota = false;
+    this.infoRecived = false;
+    this.change(1)
+  }
+
+  _id:number = 0;
+  
+  profileExistInDota:boolean = false;
+  infoRecived:boolean = false;
+
+  profileInfo:ProfileModel = {};
+  recentMatches:RecentMatchModel[] = [];
+  totals:TotalsModel[] = [];
+
+  currentAction:number = 0;
+
+  isCalledP:boolean = false;
+  isCalledR:boolean = false;
+  isCalledT:boolean = false;
+  
     change(x:number){
+      this.currentAction = x;
+      this.infoRecived = false;
       switch(x){
         case 1:{
-          this.server.getPlayer(this.model).subscribe({next:(data:any)=>this.json=data});
+          if(this.isCalledP){this.infoRecived = true}
+          else{
+            this.isCalledP = true;
+            this.server.getPlayer(this._id).subscribe({next:(data:any)=>{
+              this.infoRecived = true
+              this.profileInfo=data;
+              if(this.profileInfo.accountId === null){
+                this.profileExistInDota = false;
+                return
+              }
+              this.profileExistInDota = true;
+              }});
+          }
           break
         }
         case 2:{
-          this.server.getRecentMatches(this.model).subscribe({next:(data:any)=>this.json=data});
+          if(this.isCalledR){this.infoRecived = true}
+          else{
+            this.isCalledR = true;
+            this.server.getRecentMatches(this._id).subscribe({next:(data:any)=>{this.recentMatches=data;this.infoRecived = true}});
+          }
           break
         }
         case 3:{
-          this.server.getTotals(this.model).subscribe({next:(data:any)=>this.json=data});
+          if(this.isCalledT){this.infoRecived = true}
+          else{
+            this.isCalledT = true;
+            this.server.getTotals(this._id).subscribe({next:(data:any)=>{this.totals=data;this.infoRecived = true}});
+          }
           break
         }
       }

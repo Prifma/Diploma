@@ -1,6 +1,6 @@
 import { ProInfoModel } from "./ProInfoModel";
 
 export class TeamModel{
-    score?:string;
+    score:string = "";
     proModel?:ProInfoModel;
 }

@@ -9,5 +9,5 @@ export class ResultComponent {
     @Input()
     action?:number=0;
     @Input()
-    model:any;
+    id:number= 0;
 }

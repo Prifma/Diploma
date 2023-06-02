@@ -1,4 +1,4 @@
-﻿using DiplomaProject.OpenDotaAPI.APIModels;
+﻿    using DiplomaProject.OpenDotaAPI.APIModels;
 using DiplomaProject.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -42,7 +42,12 @@ namespace DiplomaProject.Controllers
             var model = _dotaAPI.GetTotals(id);
             return model;
         }
-
+        [HttpGet]
+        [Route("user")]
+        public SteamAccModel GetUser(long id)
+        {
+            return _dotaAPI.GetSteamAcc(id);
+        }
 
     }
 }
