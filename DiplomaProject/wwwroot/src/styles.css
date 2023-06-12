@@ -1,264 +1,7 @@
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/styles.css?ngGlobalStyle ***!
   \**********************************************************************************************************************************************************************************************************************/
-
-app-statistic-root{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1em;
-    height: 88%;
-}
-app-option-panel{
-    width: 37.2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 1em;
-    background-image: linear-gradient(to bottom right,#08293f,#0b335d,#0B3C5D);
-    height: auto;
-}
-app-statistic-result{
-    width: 60.8%;
-    border-radius: 1em;
-    background-image: linear-gradient(to top left,#0b335d,#0B3C5D,#0b335d);
-}
-app-statistic-result > div{
-    width: 100%;
-    height: 100%;
-}
-
-
-.desktop-header{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #0a233c;
-    height: 9%;
-}
-app-header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 61.8%;
-}
-.header-item a{
-    color: white;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-.header-item a:hover{
-    animation: flicker 1.5s infinite alternate;
-    cursor: pointer;
-}
-html,app-steam button,body{
-    background-color: #0B3C5D;
-    color: white;
-    height: 100%;
-    
-}
-
-
-
-
-.option--item{
-padding-top: 1em;
-}
-.option--name{
-    color: white;
-    font-size: 1.2em;
-}
-.option--form{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-}
-.option--field input{ 
-    background-color: #328CC1;
-    border: none;
-    outline: none;
-    border-radius: 3em;
-
-}
-
-.option--button{
-    background-color: #0A1612;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    color:white;
-    margin-top: 1em;
-}
-.option--button:disabled{
-    background-color: #1A2930;
-    
-}
-.match-statistic{
-    width: 100%;
-}
-.hero--table{
-    width: 100%;
-}
-.recent--table{
-    width: 100%;
-    
-    background-color: #092D4C;
-}
-.recent--table tr td {
-    border: 2px solid rgba(0, 0, 0, 0.21);
-    padding: 0.2em;
-}
-.dire .hero--table{
-    background-image: linear-gradient(to bottom right, #433C43,#242F39);
-}
-.radiant .hero--table{
-    background-image: linear-gradient(to bottom right, #3E4842,#242F39);
-}
-
-.hero-item{
-    max-width: 2.9em;
-    max-height: 2.9em;
-}
-.hero-items{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.hero-normal-items{
-    display: flex;
-    flex-direction: column;
-}
-.hero-neutral-item{
-    border-radius: 15em;
-}
-.hero--cell{
-    text-align: center;
-    vertical-align: middle;
-}
-.hero--cell:hover{
-    background-color: rgba(255,255,255,0.3);
-}
-.match-statistic>label{
-    font-size: 1.5em;
-}
-.color_radiant{
-    color:#92A525;
-}
-.color_dire{
-    color:#B93A2A;
-}
-.match-score{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5em;
-}
-.shadow{
-    text-shadow: 2px 2px 5px
-}
-
-
-.profile{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.profile--sections{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.profile--sections button{
-    background-color: inherit;
-    text-decoration: underline;
-    text-underline-offset: 0.5em;
-    color: white;
-}
-.profile--sections button:hover{
-    text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff;
-}
-.profile--sections button:disabled{
-    color: silver;
-}
-app-profile{
-    margin: 1em;
-}
-.profile--section{
-    margin: 1em;
-}
-
-app-profile-info{
-    
-    display: flex;
-    flex-direction: column;
-    font-size: 1.4em;
-}
-app-profile-info a{
-    color: white;
-    text-decoration: none;
-}
-.medium{
-    max-width: 10em;
-}
-.load{
-    position: absolute;
-    bottom: 22em;
-    right: 25em;
-}
-
-
-.totals{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-    
-}
-.totals-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    background-color: #0a233c;
-}
-
-
-
-
-
-
-
-
-
-@keyframes flicker {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #0fa,
-        0 0 80px #0fa,
-        0 0 90px #0fa,
-        0 0 100px #0fa,
-        0 0 150px #0fa;
-    
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }    
-  }
-
-
-
-
-
-
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap);
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/reset.css?ngGlobalStyle ***!
   \*********************************************************************************************************************************************************************************************************************/
@@ -515,5 +258,162 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }  
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/styles.css?ngGlobalStyle (1) ***!
+  \**************************************************************************************************************************************************************************************************************************/
+:root{
+    --background:#1C242D;
+    --block:#242F39;
+    --block1: #F7EF81;
+    --block2:#2E3740;
+    --block3:#0b221b;
+    --buttons:#AFC1D6;
+    --text-color:white;
+}
+html{
+    transition: all 0.8s ease-in;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+html, body { overflow-x:visible}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.container .text{
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container form{
+  padding: 30px 0 0 0;
+}
+.container form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
+
 
 /*# sourceMappingURL=styles.css.map*/

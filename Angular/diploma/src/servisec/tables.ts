@@ -46,7 +46,7 @@ export class TableBuilderService{
 
     private getNormalRow(model:HeroModel) {
         let result = "<tr class='hero--row'>";
-        result +=`<td class="hero--cell">${model.heroId}</td>`; 
+        result +=`<td class="hero--cell"><img class="hero-img" src="${model.imgUrl}" alt="${model.heroName}"></td>`; 
         result +=`<td class="hero--cell">${model.kills}</td>`;
         result +=`<td class="hero--cell">${model.deaths}</td>`;
         result +=`<td class="hero--cell">${model.assists}</td>`;
@@ -80,7 +80,7 @@ export class TableBuilderService{
     }
     private getShortRow(model:HeroModel) {
         let result = "<tr class='hero--row'>";
-        result +=`<td class='hero--cell'>${model.heroId}</td>`; 
+        result +=`<td class='hero--cell'><img class="hero-img" src="${model.imgUrl}" alt="${model.heroName}"></td>`; 
         result +=`<td class='hero--cell>${model.kills}</td>`;
         result +=`<td class='hero--cell>${model.deaths}</td>`;
         result +=`<td class='hero--cell>${model.assists}</td>`;

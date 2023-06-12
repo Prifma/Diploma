@@ -1,0 +1,9 @@
+.com-root{
+    display: flex;
+}
+@media only screen and (max-width: 480px) {
+    .com-root{
+        
+        flex-direction: column-reverse;
+    }
+}

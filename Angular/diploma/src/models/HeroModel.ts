@@ -2,6 +2,8 @@ import { ItemModel } from "./ItemModel";
 
 export class HeroModel{
     heroId?:string;
+    heroName?:string;
+    imgUrl?:string;
     accountId?:string;
     netWorth?:string;
     playerSlot?:string;

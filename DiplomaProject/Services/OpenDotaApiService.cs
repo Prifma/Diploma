@@ -5,6 +5,7 @@ using DiplomaProject.OpenDotaAPI.Fabrics;
 using DiplomaProject.OpenDotaAPI.Getters;
 using DiplomaProject.OpenDotaAPI.APIComposite;
 using DiplomaProject.OpenDotaAPI.PostProcces;
+using DiplomaProject.DataBase;
 
 namespace DiplomaProject.Services
 {
@@ -13,8 +14,10 @@ namespace DiplomaProject.Services
         private const string _openDotaURL = "https://api.opendota.com/api";
         private Dictionary<string, string> _apiParameters = new Dictionary<string, string>();
         private IConfiguration _configuration;
-        public OpenDotaApiService(IConfiguration configuration) {
+        private ApplicationContext _context;
+        public OpenDotaApiService(IConfiguration configuration, ApplicationContext context) {
             _configuration = configuration;
+            _context = context;
         }
 
         public IAPIModel GetAccountInfo(long id) {
@@ -55,15 +58,21 @@ namespace DiplomaProject.Services
             return parser.ParseToArray();
         }
 
-        public SteamAccModel GetSteamAcc(long id)
+        public SteamAccModel GetSteamAcc(string id)
         {
-            string url = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=94C8CF8E8735EE208B3E8FB0567B422F&steamids=" + id.ToString();
+            string url = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=94C8CF8E8735EE208B3E8FB0567B422F&steamids=" + id;
             OnceApiGetter onceApiGetter = new OnceApiGetter(url);
             onceApiGetter.Invoke();
             var result = onceApiGetter.Result;
             SteamConfiguratoin conf = new SteamConfiguratoin(_configuration);
             APIParser parser = new APIParser(result, conf);
             var item = (SteamAccModel)parser.Parse();
+            
+                var user = _context.Users.Where(u => u.Id == item.id).FirstOrDefault();
+                if (user is null)
+                    item.userType = DataBase.Enities.UserType.Common;
+                else item.userType = user.UserType;
+            
             return item;
         }
 

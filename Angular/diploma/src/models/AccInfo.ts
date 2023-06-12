@@ -1,5 +1,8 @@
+import { UserType } from "./Comunity/UserType";
+
 export class AccInfo{
-    steamId?:string;
+    id?:string;
+    userType?:UserType;
     isAuth:boolean = false;
     name?:string;
     imgUrl?:string;

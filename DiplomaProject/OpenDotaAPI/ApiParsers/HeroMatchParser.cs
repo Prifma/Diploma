@@ -1,6 +1,7 @@
 ﻿using DiplomaProject.OpenDotaAPI.APIModels;
 using DiplomaProject.OpenDotaAPI.ApiParsers.APIParserConfigurations;
 using System.Xml.Serialization;
+using static System.Net.WebRequestMethods;
 
 namespace DiplomaProject.OpenDotaAPI.ApiParsers
 {
@@ -15,6 +16,17 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers
             ((HeroModel)model).mainItems =  GetMainItems();
             ((HeroModel)model).backPackItems =  GetBackpackItems();
             ((HeroModel)model).neutralItem = GetNeutralItems();
+            SetInfo((HeroModel)model);
+        }
+
+        private void SetInfo(HeroModel model) {
+            var heroes = _configuration.Configuration.GetSection("heroesInfo").GetChildren();
+            var hero = heroes.Where(h => h.GetSection("id").Value == model.heroId).FirstOrDefault();
+            
+            if (hero is not null) {
+                model.heroName = hero.GetSection("localized_name").Value;
+                model.imgUrl = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/" + hero.GetSection("name").Value + ".png";
+            }
         }
 
         private ItemModel[] GetMainItems() {

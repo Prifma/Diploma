@@ -121,3 +121,14 @@ C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\De
 C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\obj\Debug\net7.0\DiplomaProject.RazorAssemblyInfo.cache
 C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\obj\Debug\net7.0\DiplomaProject.RazorAssemblyInfo.cs
 C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\DiplomaProject.staticwebassets.runtime.json
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Humanizer.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\System.CodeDom.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\MySqlConnector.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Нова папка\Коледж\DIPLOMA\DiplomaProject\DiplomaProject\bin\Debug\net7.0\heroes.json

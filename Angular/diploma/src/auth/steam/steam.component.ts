@@ -1,6 +1,7 @@
 
 import { Component, Input } from '@angular/core';
 import { AccInfo } from 'src/models/AccInfo';
+import { AccountSingleton } from 'src/singleton/AccountSingleton';
 
 @Component({
   selector: 'app-steam',
@@ -9,6 +10,6 @@ import { AccInfo } from 'src/models/AccInfo';
 })
 export class SteamComponent {
   @Input()
-  acc:AccInfo = new AccInfo();
+  acc?:AccInfo = new AccInfo();
   
 }

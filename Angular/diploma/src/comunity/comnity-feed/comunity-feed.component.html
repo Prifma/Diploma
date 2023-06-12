@@ -1,0 +1,3 @@
+<div *ngIf="isFeed" class="preview-container">
+    <comunity-post-preview *ngFor="let item of posts" [post]="item" (e)="goToPost($event)"></comunity-post-preview>
+</div>

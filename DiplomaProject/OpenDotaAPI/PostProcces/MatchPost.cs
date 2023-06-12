@@ -11,5 +11,6 @@ namespace DiplomaProject.OpenDotaAPI.PostProcces
             var a = TimeSpan.FromSeconds(t);
             model.duration = a.ToString(@"mm\:ss");
         }
+
     }
 }

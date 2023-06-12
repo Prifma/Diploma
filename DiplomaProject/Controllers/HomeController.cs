@@ -32,6 +32,7 @@ namespace DiplomaProject.Controllers
             if (User?.Identity?.IsAuthenticated ?? false){
                 var s = HttpContext.User.Claims.First().Value;
                 var result = new { m = s.Replace("https://steamcommunity.com/openid/id/", ""), redirect = "/" };
+                Console.WriteLine(result);
                 return result;
             }
             else return new

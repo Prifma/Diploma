@@ -5,6 +5,8 @@ namespace DiplomaProject.OpenDotaAPI.APIModels
     public class HeroModel : IAPIModel
     {
         public string? heroId { get; set; }
+        public string? heroName { get; set; }
+        public string? imgUrl { get; set; }
         public string? accountId { get; set; }
         public string? netWorth { get; set; }
         public string? playerSlot { get; set; }

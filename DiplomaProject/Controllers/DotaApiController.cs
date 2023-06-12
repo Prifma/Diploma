@@ -44,8 +44,9 @@ namespace DiplomaProject.Controllers
         }
         [HttpGet]
         [Route("user")]
-        public SteamAccModel GetUser(long id)
+        public SteamAccModel GetUser(string id)
         {
+            Console.WriteLine(id);
             return _dotaAPI.GetSteamAcc(id);
         }
 

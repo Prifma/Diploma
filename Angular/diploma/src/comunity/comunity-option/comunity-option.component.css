@@ -1,0 +1,22 @@
+
+@media only screen and (max-width: 480px) {
+    .com-option{
+        display: flex;
+        max-width: 95%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2em;
+        margin: 0.5em;
+        background-color: var(--block2);
+        box-shadow: 10px 5px 5px black;;
+    }
+    .com-option button{
+        background-color: var(--block3);
+        border-radius: 50%;
+    }
+    .com-option form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

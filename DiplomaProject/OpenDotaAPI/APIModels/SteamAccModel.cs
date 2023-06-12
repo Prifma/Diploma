@@ -1,8 +1,11 @@
-﻿namespace DiplomaProject.OpenDotaAPI.APIModels
+﻿using DiplomaProject.DataBase.Enities;
+
+namespace DiplomaProject.OpenDotaAPI.APIModels
 {
     public class SteamAccModel : IAPIModel
     {
         public string id { get; set; }
+        public UserType? userType { get; set; }
         public string name { get; set; }
         public string imgUrl { get; set; }
         public override string ToString()

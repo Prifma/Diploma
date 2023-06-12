@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LBw30vdIb1tKbsoizaPbtOWa2DL7i2qQjtVAJCy4NOE=",
+  "Hash": "eyzZVYeyuGRlKUQNUak3lqz8ffiNuYX9GFjYVC6m+qA=",
   "Source": "DiplomaProject",
   "BasePath": "_content/DiplomaProject",
   "Mode": "Default",
@@ -712,6 +712,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\src\\assets\\84.webp"
+    },
+    {
+      "Identity": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\icons8-back-80.png",
+      "SourceId": "DiplomaProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\",
+      "BasePath": "_content/DiplomaProject",
+      "RelativePath": "src/assets/icons8-back-80.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\src\\assets\\icons8-back-80.png"
+    },
+    {
+      "Identity": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\icons8-plus-80.png",
+      "SourceId": "DiplomaProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\",
+      "BasePath": "_content/DiplomaProject",
+      "RelativePath": "src/assets/icons8-plus-80.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\src\\assets\\icons8-plus-80.png"
     },
     {
       "Identity": "C:\\Нова папка\\Коледж\\DIPLOMA\\DiplomaProject\\DiplomaProject\\wwwroot\\src\\assets\\pngwing.com (1).png",

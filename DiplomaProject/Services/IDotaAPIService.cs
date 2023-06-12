@@ -8,7 +8,7 @@ namespace DiplomaProject.Services
         public IAPIModel GetAccountInfo(long id);
         public IAPIModel[] GetRecentMatch(long id);
         public IAPIModel[] GetTotals(long id);
-        public SteamAccModel GetSteamAcc(long id);
+        public SteamAccModel GetSteamAcc(string id);
 
     }
 }
