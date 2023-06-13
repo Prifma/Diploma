@@ -266,7 +266,7 @@ textarea {
     --block:#242F39;
     --block1: #F7EF81;
     --block2:#2E3740;
-    --block3:#0b221b;
+    --block3:#000000;
     --buttons:#AFC1D6;
     --text-color:white;
 }
@@ -276,6 +276,10 @@ html{
     color: var(--text-color);
 }
 html, body { overflow-x:visible}
+
+.menu{
+  background-color: (var(--block1))
+}
 *{
   margin: 0;
   padding: 0;
@@ -336,6 +340,7 @@ form .form-row .textarea{
   padding-top: 10px;
 }
 .input-data label{
+  transition: color 0.8s ease-out;
   position: absolute;
   pointer-events: none;
   bottom: 10px;
@@ -343,17 +348,20 @@ form .form-row .textarea{
   transition: all 0.3s ease;
 }
 .textarea label{
+  transition: color 0.8s ease-out;
   width: 100%;
   bottom: 40px;
   background: #fff;
 }
 .input-data .underline{
+  transition: background 0.8s ease-out;
   position: absolute;
   bottom: 0;
   height: 2px;
   width: 100%;
 }
 .input-data .underline:before{
+  transition: background 0.8s ease-out;
   position: absolute;
   content: "";
   height: 2px;
@@ -369,6 +377,18 @@ form .form-row .textarea{
 .textarea textarea:valid ~ .underline:before{
   transform: scale(1);
 }
+
+.textarea textarea.ng-touched:invalid ~ .underline:before,
+.input-data input.ng-touched:invalid ~ .underline:before
+{
+  background: #db3434;
+}
+
+.input-data input.ng-touched:invalid ~ label, 
+.textarea textarea.ng-touched:invalid ~ label{
+  color:#db3434;
+}
+
 .submit-btn .input-data{
   overflow: hidden;
   height: 45px!important;
@@ -397,21 +417,37 @@ form .form-row .textarea{
   position: relative;
   z-index: 2;
 }
-@media (max-width: 700px) {
-  .container .text{
-    font-size: 30px;
+form .form-row .input-data{
+  margin: 35px 0!important;
+}
+
+@media only screen and (max-width:480px) {
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .container form{
-    padding: 10px 0 0 0;
+}
+@media only screen and (max-width:300px) {
+  html{
+    font-size: 10px;
   }
-  .container form .form-row{
-    display: block;
-  }
-  form .form-row .input-data{
-    margin: 35px 0!important;
-  }
-  .submit-btn .input-data{
-    width: 40%!important;
+}
+.load{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-not-exist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width:1030px) and (min-width:300px){
+  html{
+    font-size: 14px;
   }
 }
 

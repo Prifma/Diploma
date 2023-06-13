@@ -1,4 +1,4 @@
-<div *ngIf="recive">
+<div *ngIf="recive" class="center">
     <table class="recent--table" >
         <tr>
             <td class="hero--cell">
@@ -19,7 +19,7 @@
         </tr>
         <tr *ngFor="let model of _recent">
             <td class="hero--cell">
-                {{model.heroId}}
+                <img src="{{model.imgUrl}}" alt="{{model.heroName}}" class="hero-img">
             </td >
             <td class="hero--cell">
                 {{model.kills}}

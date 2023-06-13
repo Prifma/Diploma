@@ -12,10 +12,12 @@
             <input name="switch" id="two" type="radio" checked value="2" (change)="onItemChange($event)"/>
             <label for="two" class="switch__label">Статистика</label>
         </div>
+        <!--
         <div class="menu__item" [class.checked]="third">
             <input name="switch" id="three" type="radio" value="3" (change)="onItemChange($event)"/>
             <label for="three" class="switch__label" >Турніри</label>
         </div>
+        -->
         <app-steam [acc] = "acc"></app-steam>
     </div>
 </div>

@@ -6,6 +6,8 @@
         public string playerSlot { get; set; }
         public string radiantWin { get; set; }
         public string heroId { get; set; }
+        public string heroName { get; set; }
+        public string imgUrl { get; set; }
         public string kills { get; set; }
         public string deaths { get; set; }
         public string assists { get; set; }

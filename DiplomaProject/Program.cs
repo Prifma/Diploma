@@ -23,7 +23,11 @@ builder.Services.AddAuthentication(options =>
         .AddSteam();
 var connectionstring = "server=localhost;user=root;password=;database=testdb;";
 builder.Services.AddDbContext<ApplicationContext>(x =>
-x.UseMySql(connectionstring, ServerVersion.AutoDetect(connectionstring)));
+x.UseMySql(connectionstring, ServerVersion.AutoDetect(connectionstring),options => options.EnableRetryOnFailure(
+                    maxRetryCount: 5,
+                    maxRetryDelay: System.TimeSpan.FromSeconds(30),
+                    errorNumbersToAdd: null)
+                ));
 builder.Services.AddTransient<IDotaAPIService, OpenDotaApiService>();
 builder.Configuration.AddJsonFile("prettyItem.json");
 builder.Configuration.AddJsonFile("heroes.json");

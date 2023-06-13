@@ -1,22 +1,43 @@
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 740px) {
     .com-option{
-        display: flex;
         max-width: 95%;
-        flex-direction: row;
-        justify-content: space-evenly;
         padding: 2em;
         margin: 0.5em;
-        background-color: var(--block2);
-        box-shadow: 10px 5px 5px black;;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
-    .com-option button{
-        background-color: var(--block3);
-        border-radius: 50%;
+    form label{
+        display: none;
     }
-    .com-option form{
+}
+.com-option button{
+    background-color: var(--block3);
+    border-radius: 50%;
+}
+.com-option{
+    display: flex;
+    background-color: var(--block2);
+    box-shadow: 10px 5px 5px black;;
+}
+
+.com-option form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}   
+form label{
+    text-align: center;
+}
+
+@media only screen and (min-width: 740px) {
+    .com-option{
+        width: 100%;
+        padding: 1em;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
+        margin-top: 2em;
     }
 }

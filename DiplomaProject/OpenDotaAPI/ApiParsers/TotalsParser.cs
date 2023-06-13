@@ -46,7 +46,7 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers
             foreach (var item in data)
             {
                 var conf = new AccountPartConfiguration(_configuration.Configuration, ((AccountPartConfiguration)_configuration).Section);
-                var parser = new RecentMatchParser(_json, conf, i);
+                var parser = new TotalsParser(_json, conf, i);
                 list.Add((TotalsModel)parser.Parse());
                 i++;
             }

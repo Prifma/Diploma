@@ -11,6 +11,6 @@
     </div>
 </div>
 <div *ngIf="!profileExistInDota">
-    <div *ngIf="infoRecived">Даний аккаунт не заходив в Доту або його не існує</div>
+    <div *ngIf="infoRecived" class="content-not-exist"><span>Даний аккаунт не заходив в Доту або його не існує</span></div>
     <div *ngIf="!infoRecived" class="load"><app-load></app-load></div>
 </div>

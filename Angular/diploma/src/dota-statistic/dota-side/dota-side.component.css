@@ -31,3 +31,29 @@
 .hero--cell:hover{
     background-color: rgba(255,255,255,0.3);
 }
+.hero--table{
+    width: 100%;
+}
+.match-score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color_radiant{
+    color:#92A525;
+}
+.color_dire{
+    color:#B93A2A;
+}
+@media only screen and (max-width:550px){
+    .hero-item{
+        max-width: 2.4em;
+
+    }
+}
+@media only screen and (max-width:500px){
+    .hero-item{
+        max-width: 2em;
+        
+    }
+}

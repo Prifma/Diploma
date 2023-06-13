@@ -6,6 +6,7 @@ import { TableBuilderService } from 'src/servisec/tables';
 @Component({
   selector: 'app-profile-totals',
   templateUrl: './profile-totals.component.html',
+  styleUrls: [`./profile-totals.component.css`]
 })
 export class ProfileTotalsComponent {
     @Input() set totals(value:TotalsModel[]){

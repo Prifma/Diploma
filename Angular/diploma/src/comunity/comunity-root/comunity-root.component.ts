@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input, ViewEncapsulation } from '@angular/core';
 import { HttpClient,HttpParams} from '@angular/common/http';
 import { AccInfo } from 'src/models/AccInfo';
 import { ServerService } from 'src/servisec/server';
@@ -7,7 +7,7 @@ import { AccountSingleton } from 'src/singleton/AccountSingleton';
 @Component({
     selector: 'comunity-root',
     templateUrl: './comunity-root.component.html',
-    styleUrls: ['./comunity-root.component.css']
+    styleUrls: ['./comunity-root.component.css'],
 })
 export class ComunityComponent {
     

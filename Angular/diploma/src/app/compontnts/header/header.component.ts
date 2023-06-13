@@ -12,12 +12,12 @@ export class HeaderComponent {
   statisticText:string = "white"
   statisticBlock:string = "#242F39";
   statisticBlock2:string = "#2E3740";
-  statisticBlock3:string = "#0b221b";
+  statisticBlock3:string = "#000000";
   comunity:string = "#cbeaf2";
   comunityText:string = "#333"
   comunityBlock:string = "#FFBF69";
   comunityBlock2:string = "#2EC4B6";
-  comunityBlock3:string = "#FF9F1C";
+  comunityBlock3:string = "white";
   constructor(private router:Router){
     
   }

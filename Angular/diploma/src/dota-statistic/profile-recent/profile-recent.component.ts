@@ -7,6 +7,7 @@ import { TableBuilderService } from 'src/servisec/tables';
 @Component({
   selector: 'app-profile-recent',
   templateUrl: './profile-recent.component.html',
+  styleUrls: ['./profile-recent.component.css']
 })
 export class ProfileRecentComponent {
     @Input() set recent(value:RecentMatchModel[]){

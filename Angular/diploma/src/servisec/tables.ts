@@ -23,8 +23,19 @@ export class TableBuilderService{
       <td class="hero--cell">С</td>
       <td class="hero--cell">П</td>
       <td class="hero--cell">ЗЦ</td>
-      <th>Шкода</td>
+      <td class="hero--cell">Шкода</td>
     </tr>`;
+/*
+    "<tr class='hero--row'>";
+        result +=`<td class='hero--cell'><img class="hero-img" src="${model.imgUrl}" alt="${model.heroName}"></td>`; 
+        result +=`<td class='hero--cell>${model.kills}</td>`;
+        result +=`<td class='hero--cell>${model.deaths}</td>`;
+        result +=`<td class='hero--cell>${model.assists}</td>`;
+        result +=`<td class='hero--cell>${model.netWorth}</td>`;
+        result +=`<td class='hero--cell>${model.heroDamage}</td>`;
+        result += "</tr>";
+*/
+
     private endTable:string=`</table>`
     
     matchSideTable(models:HeroModel[]){
@@ -60,6 +71,17 @@ export class TableBuilderService{
         return result;
     }
 
+    private getShortRow(model:HeroModel) {
+        let result = "<tr class='hero--row'>";
+        result +=`<td class='hero--cell'><img class="hero-img" src="${model.imgUrl}" alt="${model.heroName}"></td>`; 
+        result +=`<td class='hero--cell'>${model.kills}</td>`;
+        result +=`<td class='hero--cell'>${model.deaths}</td>`;
+        result +=`<td class='hero--cell'>${model.assists}</td>`;
+        result +=`<td class='hero--cell'>${model.netWorth}</td>`;
+        result +=`<td class='hero--cell'>${model.heroDamage}</td>`;
+        result += "</tr>";
+        return result;
+    }
     private getItems(model:HeroModel){
         let result:string = "<th class='hero--cell'>";
         result +="<div class='hero-items'><div class='hero-normal-items'><div class='hero-main-items'>";
@@ -76,17 +98,6 @@ export class TableBuilderService{
         if(model.neutralItem.id != "0")
             result+=`<th class='hero--cell'><img class="hero-item hero-neutral-item" src="${model.neutralItem.path}" alt="${model.neutralItem.name}">`;
         result+="</td>";
-        return result;
-    }
-    private getShortRow(model:HeroModel) {
-        let result = "<tr class='hero--row'>";
-        result +=`<td class='hero--cell'><img class="hero-img" src="${model.imgUrl}" alt="${model.heroName}"></td>`; 
-        result +=`<td class='hero--cell>${model.kills}</td>`;
-        result +=`<td class='hero--cell>${model.deaths}</td>`;
-        result +=`<td class='hero--cell>${model.assists}</td>`;
-        result +=`<td class='hero--cell>${model.netWorth}</td>`;
-        result +=`<td class='hero--cell>${model.heroDamage}</td>`;
-        result += "</tr>";
         return result;
     }
 }

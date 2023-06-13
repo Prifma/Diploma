@@ -3,6 +3,8 @@ export class RecentMatchModel{
     playerSlot?:string;
     radiantWin?:string;
     heroId?:string;
+    heroName?:string;
+    imgUrl?:string;
     kills?:string;
     deaths?:string;
     assists?:string;

@@ -1,10 +1,10 @@
 <div class="post-header">
     <span (click)="Back()"><img src="/src/assets/icons8-back-80.png" class="back-image"></span>
     <comunity-user *ngIf="postIsLoad" [user]="_post.userId"></comunity-user>
-    <div class="panel">
-        <admin-panel *ngIf="user?.userType === 1" [entityId]="_post.id" [userId]="_post!.userId"></admin-panel>
-        <user-panel *ngIf="user?.isAuth && _post?.userId == user?.id" (e)="Action()" [id]="_post.id"></user-panel>
-    </div>
+</div>
+<div class="panel">
+    <admin-panel *ngIf="user?.userType === 1" [entityId]="_post.id" [userId]="_post!.userId"></admin-panel>
+    <user-panel *ngIf="user?.isAuth && _post?.userId == user?.id" (e)="Action()" [id]="_post.id"></user-panel>
 </div>
 <div *ngIf="!redactionMode && postIsLoad" class="view-mod">
     <div class="title">

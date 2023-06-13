@@ -1,6 +1,7 @@
 :host button{
     background-color: var(--buttons);
-    padding: 1.1em;
+    padding: 0.2em;
+    margin: 0.4em;
     border-radius: 20%;
     box-shadow: 2px 2px 5px black;
     
@@ -9,7 +10,6 @@
     :host{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
     }
     
 }

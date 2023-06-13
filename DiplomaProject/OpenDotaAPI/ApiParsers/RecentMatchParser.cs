@@ -32,7 +32,20 @@ namespace DiplomaProject.OpenDotaAPI.ApiParsers
                     Console.WriteLine(ex.Message);
                 }
             }
+            Fill(model);
             return model;
+        }
+        protected override void Fill(IAPIModel model)
+        {
+            var recent = (RecentMatchModel)model;
+            var heroes = _configuration.Configuration.GetSection("heroesInfo").GetChildren();
+            var hero = heroes.Where(h => h.GetSection("id").Value == recent.heroId).FirstOrDefault();
+
+            if (hero is not null)
+            {
+                recent.heroName = hero.GetSection("localized_name").Value;
+                recent.imgUrl = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/" + hero.GetSection("name").Value + ".png";
+            }
         }
 
 

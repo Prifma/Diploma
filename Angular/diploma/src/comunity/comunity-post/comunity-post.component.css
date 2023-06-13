@@ -24,6 +24,9 @@
 :host{
     max-width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
 .panel{
     display: flex;
@@ -34,4 +37,12 @@
     font-size: 1.4em;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    padding-bottom: 0.5em;
 }
+@media only screen and (min-width:740px) {
+    :host{
+      flex-shrink: 1;
+      flex-basis: 61%;
+      padding: 1em;
+    }
+  }

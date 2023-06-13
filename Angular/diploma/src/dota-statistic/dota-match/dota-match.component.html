@@ -14,9 +14,11 @@
                 <app-dota-side class="dire" [heroes]="direHero"></app-dota-side>
             </div>
         </div>
-        <div *ngIf="!matchExist">
-            Матч не знайденно
-    </div>
+        <div *ngIf="!matchExist" class="content-not-exist">
+            <span> 
+                Матч не знайденно
+            </span>
+        </div>
 </div>
 <div *ngIf="!matchRecive" class="load">
     <app-load></app-load>

@@ -7,6 +7,7 @@ import { ServerService } from 'src/servisec/server';
 @Component({
   selector: 'app-dota-match',
   templateUrl: './dota-match.component.html',
+  styleUrls:[`./dota-match.component.css`]
 })
 export class DotaMatchComponent {
     @Input() set matchID(value:number){

@@ -1,4 +1,5 @@
 ﻿using DiplomaProject.OpenDotaAPI.APIModels;
+using System.Text.RegularExpressions;
 
 namespace DiplomaProject.OpenDotaAPI.PostProcces
 {
@@ -41,7 +42,20 @@ namespace DiplomaProject.OpenDotaAPI.PostProcces
             model = models.Where(x => x.field == "hero_healing").First();
             model.field = "Зцілення союзників";
             result.Add(model);
+            foreach (var item in result)
+            {
+                if (item.field == "Час у грі")
+                    continue;
+                item.count = Reverse(Regex.Replace(Reverse(item.count), ".{3}", "$0 "));
+                
+            }
             return result.ToArray();
+        }
+        public static string Reverse(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
     }
 }

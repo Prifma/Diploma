@@ -9,6 +9,7 @@ import { ServerService } from 'src/servisec/server';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
+  styleUrls: ["./profile.component.css"]
 })
 export class ProfileComponent {
   @Input() set playerId(value:number){

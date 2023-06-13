@@ -5,7 +5,8 @@ import { MatchModel } from 'src/models/MatchModel';
 
 @Component({
   selector: 'app-option-panel',
-  templateUrl: './option-panel.component.html'
+  templateUrl: './option-panel.component.html',
+  styleUrls: ['./option-panel.component.css']
 })
 export class OptionPanelComponent {
   constructor(private server:ServerService){}
