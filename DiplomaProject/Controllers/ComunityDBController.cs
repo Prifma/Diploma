@@ -15,8 +15,8 @@ namespace DiplomaProject.Controllers
         }
         [HttpGet]
         [Route("getPosts")]
-        public List<Post> GetPosts(SortingType s = SortingType.Common,string search = "") {
-            return _db.GetPosts(s,search);
+        public Posts GetPosts(int offset = 0,SortingType s = SortingType.Common,string search = "") {
+            return _db.GetPosts(offset,s,search);
         }
         [HttpGet]
         [Route("getPost")]

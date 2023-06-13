@@ -1,3 +1,7 @@
 <div *ngIf="isFeed" class="preview-container">
-    <comunity-post-preview *ngFor="let item of posts" [post]="item" (e)="goToPost($event)"></comunity-post-preview>
+    <comunity-post-preview *ngFor="let item of posts?.posts" [post]="item" (e)="goToPost($event)"></comunity-post-preview>
+</div>
+
+<div *ngFor="let i of paggination" class="pagination">  
+    <button (click)="loadPosts(i)" [disabled]="posts?.page! === i" [ngClass]="{'active':posts?.page! === i}">{{ i + 1}}</button>  
 </div>

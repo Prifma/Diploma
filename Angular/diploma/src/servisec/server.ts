@@ -16,7 +16,7 @@ export class ServerService{
     private totals:string = "/api/totals?id="
     private valve:string = "/api/user?id="
 
-    private comunity:string = "/db/getPosts?s="
+    private comunity:string = "/db/getPosts?offset="
     private gPost:string = "/db/getPost?id="
     private post:string = "/db/submitPost"
     private reaction:string = "/db/addReaction"
@@ -56,9 +56,9 @@ export class ServerService{
         return this.http.get(this.valve + id);
     }
     
-    public getPosts(sort:SortingType,search:string){
+    public getPosts(offset:number,sort:SortingType,search:string){
         this.log(this.getPosts);
-        return this.http.get(this.comunity+SortingType[sort]+"&search=" + search);
+        return this.http.get(this.comunity+offset + "&s=" + SortingType[sort]+"&search=" + search);
     }
 
     public getPost(id:Guid){

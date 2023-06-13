@@ -3,6 +3,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Guid } from 'guid-typescript';
 import { AccInfo } from 'src/models/AccInfo';
 import { Post } from 'src/models/Comunity/Post';
+import { Posts } from 'src/models/Comunity/Posts';
 import { SortingType } from 'src/models/Comunity/SortingType';
 import { ServerService } from 'src/servisec/server';
 import { AccountSingleton } from 'src/singleton/AccountSingleton';
@@ -13,7 +14,8 @@ import { AccountSingleton } from 'src/singleton/AccountSingleton';
     styleUrls: ['./comunity-feed.component.css']
 })
 export class ComunityFeedComponent {
-    posts:Post[] = []
+    posts?:Posts;
+    paggination?:number[];
     isFeed:boolean = true;
     constructor(private server:ServerService,private route: ActivatedRoute,private router:Router){
         this.ChoosePost();
@@ -27,28 +29,41 @@ export class ComunityFeedComponent {
             
         })
     }
-    ChoosePost(){
+    ChoosePost(offset:number = 0){
         this.searchHasHappendAndNotComingYet = true;
         let sort:SortingType = this.route.snapshot.queryParams['sort'];
         let search:string = this.route.snapshot.queryParams['search'];
         if(!sort) sort = SortingType.Common;
         if(!search)search = "";
 
-        this.loadPosts(sort,search)
+        this.loadPosts(offset,sort,search)
     }
     searchHasHappendAndNotComingYet:boolean = false;
     currentPost!:Post;
-    
+    pageSort:SortingType = SortingType.Common;
+    pageSearch:string = ""; 
     goToPost(post:Post){
         this.router.navigate(
             [`comunity/post`,post.id]
         )
     }
     goToFeed(){
-        this.loadPosts(SortingType.Common,"")
+        this.loadPosts(0,SortingType.Common,"")
     }
-    loadPosts(sort:SortingType,search:string){
-        this.server.getPosts(sort,search).subscribe({next:(data:any) => {this.posts = data; console.log(this.posts); this.searchHasHappendAndNotComingYet = false}});
+    loadPosts(offset:number,sort:SortingType = this.pageSort,search:string = this.pageSearch){
+
+        this.server.getPosts(offset,sort,search).subscribe({next:(data:any) => {
+            this.posts = data;
+            this.pageSort = data.pageSort;
+            this.pageSearch = data.pageSearch;
+            this.buildPages();
+            this.searchHasHappendAndNotComingYet = false;
+            }});
     }
-    
+    buildPages(){
+        this.paggination = [];
+        for(let i:number = 0; i<this.posts?.pagesCount!; i++){
+            this.paggination.push(i);
+        }
+    }
 }

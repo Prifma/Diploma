@@ -28,11 +28,13 @@
   padding: 0.4em;
   height: 4em;
   background-color: var(--block3);
+  transition: all 0.8s ease-out;
 }
 .menu__item{
   padding: 1em;
   background-color: var(--block);
   border-radius: 10%;
+  transition: all 0.8s ease-out;
 }
 
 @media only screen and (max-width: 480px) {

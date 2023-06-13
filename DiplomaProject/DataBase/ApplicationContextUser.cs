@@ -13,7 +13,7 @@ namespace DiplomaProject.DataBase
             _context.Database.EnsureCreated();
         }
 
-        public List<Post> GetPosts(SortingType type,string search) {
+        public Posts GetPosts(int offset,SortingType type,string search) {
 
             var preresult = _context.Posts.Where(p=>p.Title.Contains(search));
             IQueryable<Post> sortedResult;
@@ -40,8 +40,15 @@ namespace DiplomaProject.DataBase
                     sortedResult = preresult.OrderBy(p => p.CreatetAt);
                     break;
             }
-
-            var result = sortedResult.Select(p=>new Post {Id = p.Id,Title = p.Title, UserId=p.UserId }).ToList();
+            var result = new Posts();
+            result.posts = sortedResult.Select(p=>new Post {Id = p.Id,Title = p.Title, UserId=p.UserId }).Skip(10*offset).Take(10).ToList();
+            result.page = offset;
+            result.pagesCount = sortedResult.Count() / 10;
+            if (sortedResult.Count() % 10 != 0) { 
+                result.pagesCount++;
+            }
+            result.pageSort = type;
+            result.pageSearch = search;
             return result;
         }
         public Post? GetPost(Guid id) {
